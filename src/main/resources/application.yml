@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: licitacionesDelEstado
+  profiles:
+    active: local
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/licitacionesDelEstado?autoReconnect=true&useSSL=false
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        
+plataforma:
+  licitaciones:
+    url: https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3.atom
